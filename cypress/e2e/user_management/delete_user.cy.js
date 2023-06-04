@@ -20,7 +20,7 @@ describe('Delete User', () => {
     cy.url().should('include', '/admin/viewSystemUsers')
 
     // Click on the "Delete" button for the first user
-    cy.get(':nth-child(4) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1)').click({ force: true })
+    cy.get(':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1) > .oxd-icon').click({ force: true })
 
     //Confirm Delete
     cy.get('.oxd-button--label-danger').click()
@@ -50,7 +50,7 @@ describe('Delete User', () => {
     cy.url().should('include', '/admin/viewSystemUsers')
 
     //Click on the "Delete" button for the first user
-    cy.get(':nth-child(4) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1)').click({ force: true })
+    cy.get(':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1) > .oxd-icon').click({ force: true })
 
     //Cancel Delete
     cy.get('.oxd-button--text').click()

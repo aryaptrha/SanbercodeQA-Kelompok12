@@ -36,8 +36,8 @@ describe('Add User', () => {
     cy.get("div[role='listbox']").contains('Admin').click()
 
     //Fill in the employee name
-    cy.get('.oxd-autocomplete-text-input > input').type('Paul Collings')
-    cy.get("div[role='listbox']").contains('Paul Collings').click()
+    cy.get('.oxd-autocomplete-text-input > input').type('Linda Jane Anderson')
+    cy.get("div[role='listbox']").contains('Linda Jane Anderson').click()
 
     //Select the status
     cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text'). click()
@@ -77,8 +77,8 @@ describe('Add User', () => {
     cy.get("div[role='listbox']").contains('Admin').click()
 
     //Fill in the employee name
-    cy.get('.oxd-autocomplete-text-input > input').type('Paul Collings')
-    cy.get("div[role='listbox']").contains('Paul Collings').click()
+    cy.get('.oxd-autocomplete-text-input > input').type('Linda Jane Anderson')
+    cy.get("div[role='listbox']").contains('Linda Jane Anderson').click()
 
     //Select the status
     cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text'). click()
